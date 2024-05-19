@@ -27,3 +27,17 @@ body {
     padding: 20px;
     content: 30px;
 }
+
+.listcontainer button {
+    position: absolute;
+    right: 50px;
+}
+
+.container {
+    padding: 75px;
+    margin: 20px;
+}
+
+input {
+    text-align: center;
+}

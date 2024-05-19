@@ -6,27 +6,28 @@
     </head>
 
     <body>
-        <div class="introduction">
-            <h1>To-Do List</h1>
-            <p>
-                Welcome to the To-Do List application! To begin, start typing a 
-                task in the input field down below and click enter or the save button. 
-                Entered a wrong task? No need to fear! You can click the x button on the 
-                far right of each task!
-            </p>
-        </div>
-        <div class="todolist">
-            <div class="formcontainer">
-                <form class="form">
-                    <!-- <label>Enter Tasks:</label> -->
-                    <input id="task" type="text" placeholder="Enter tasks here" />
-                    <br>
-                    <button id="" onclick="window.controller.addTasks(event)" type="submit">Save</button>
-                    <button type="button">Cancel</button>
-                </form>
+        <div class="container">
+            <div class="introduction">
+                <h1>To-Do List</h1>
+                <p>
+                    Welcome to the To-Do List application! To begin, start typing a 
+                    task in the input field down below and click enter or the save button. 
+                    Entered a wrong task? No need to fear! You can click the x button on the 
+                    far right of each task!
+                </p>
             </div>
-            <div class="listcontainer"></div>
+            <div class="todolist">
+                <div class="formcontainer">
+                    <form class="form">
+                        <!-- <label>Enter Tasks:</label> -->
+                        <input id="task" type="text" placeholder="Enter tasks here" />
+                        <br>
+                        <button id="" onclick="window.controller.addTasks(event)" type="submit">Save</button>
+                        <button type="button">Cancel</button>
+                    </form>
+                </div>
+                <ol class="listcontainer"></ol>
+            </div>
         </div>
-
     </body>
 </html>
