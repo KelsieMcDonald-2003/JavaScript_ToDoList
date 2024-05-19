@@ -1,0 +1,29 @@
+body {
+    background-color: lightsalmon;
+}
+
+.introduction {
+    text-align: center;
+    background-color: white;
+    border: solid;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.todolist {
+    margin:20px;
+}
+
+.formcontainer {
+    text-align: center;
+}
+
+.listcontainer {
+    background-color: white;
+    border: solid;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    content: 30px;
+}
