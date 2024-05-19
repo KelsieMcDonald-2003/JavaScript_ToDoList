@@ -24,9 +24,18 @@ class Controller {
     displayTasks() {
         this.listContainer.innerHTML = '';
         for(let i = 0; i < this.tasks.length; i++) {
-            var p = document.createElement("p");
-            p.textContent = this.tasks[i];
-            this.listContainer.appendChild(p);
+            var item = document.createElement("li");
+            item.textContent = this.tasks[i];
+            this.listContainer.appendChild(item);
+
+            var removeButton = document.createElement("button");
+            removeButton.textContent = "Remove";
+            removeButton.onclick = () => {
+                this.removeTasks(this.tasks[i]);
+            };
+
+            item.appendChild(removeButton);
+            this.listContainer.appendChild(item);
         }
     }
 }
