@@ -2,15 +2,24 @@ import '../css/style1.css';
 
 class Controller {
     constructor() {
-        this.tasks = [];
+        this.tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
         this.task = document.getElementById('task');
         this.listContainer = document.querySelector('.listcontainer');
+
+        this.displayTasks();
     }
 
     addTasks(event) {
         event.preventDefault();
-        this.tasks.push(this.task.value);
-        this.displayTasks();
+        if (this.task.value == '') {
+            this.removeTasks();
+        } else {
+            this.tasks.push(this.task.value);
+            this.saveTasks();
+            this.displayTasks();
+            this.clearTasks();
+        }
     }
 
     removeTasks(task) {
@@ -18,6 +27,7 @@ class Controller {
         if (index > -1) {
             this.tasks.splice(index, 1);
         }
+        this.saveTasks();
         this.displayTasks();
     }
 
@@ -37,6 +47,14 @@ class Controller {
             item.appendChild(removeButton);
             this.listContainer.appendChild(item);
         }
+    }
+
+    clearTasks() {
+        this.task.value = '';
+    }
+
+    saveTasks() {
+        localStorage.setItem('tasks', JSON.stringify(this.tasks));
     }
 }
 
