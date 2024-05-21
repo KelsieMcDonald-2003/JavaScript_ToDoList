@@ -1,5 +1,6 @@
 import '../css/style1.css';
 import FormComponent from '../components/FormComponent.js';
+import WelcomeComponent from '../components/WelcomeComponent.js';
 import React from 'react';
 import ReactDOM, {createRoot} from 'react-dom/client';
 
@@ -75,6 +76,7 @@ class Controller {
 
     renderForm() {
         ReactDOM.createRoot(document.getElementById('formcontainer')).render(<FormComponent />);
+        ReactDOM.createRoot(document.getElementById('welcome')).render(<WelcomeComponent />);
     }
 }
 
