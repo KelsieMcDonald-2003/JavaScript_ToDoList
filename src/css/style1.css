@@ -1,18 +1,20 @@
 body {
-    background-color: lightsalmon;
+    background: linear-gradient(-45deg, blue, lightblue)
 }
 
 .introduction {
     text-align: center;
     background-color: white;
     border: solid;
-    border-radius: 20px;
-    padding: 20px;
-    margin: 30px;
+    border-radius: 5px; 
+    padding:5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: small;
 }
 
 .todolist {
-    margin:20px;
+    margin: 5%;
 }
 
 .formcontainer {
@@ -22,20 +24,27 @@ body {
 .listcontainer {
     background-color: white;
     border: solid;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 20px;
-    content: 30px;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 5%;
+    content: 5%;
+    font-size: x-large;
 }
 
 .listcontainer button {
     position: absolute;
-    right: 200px;
+    right: 35%;
+    font-size: x-large;
+    border: solid;
+    background: linear-gradient(-45deg, red, lightcoral);
+    border-color: black;
+    border-radius: 25px;
 }
 
 .container {
-    padding: 75px;
-    margin: 20px;
+    padding: 1%; 
+    /* margin: 5%; */
 }
 
 input {
