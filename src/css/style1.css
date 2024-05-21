@@ -1,5 +1,8 @@
 body {
-    background: linear-gradient(-45deg, blue, lightblue)
+    background: linear-gradient(-45deg, blue, lightblue);
+    background-size: cover;
+    height: 100vh;
+    margin-top: 5%;
 }
 
 .introduction {
@@ -28,14 +31,14 @@ body {
     margin-left: 30%;
     margin-right: 30%;
     padding: 5%;
-    content: 5%;
+    content: 1%;
     font-size: x-large;
 }
 
 .listcontainer button {
     position: absolute;
     right: 35%;
-    font-size: x-large;
+    font-size: medium;
     border: solid;
     background: linear-gradient(-45deg, red, lightcoral);
     border-color: black;
