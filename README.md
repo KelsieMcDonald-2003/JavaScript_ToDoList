@@ -23,35 +23,39 @@ const FormComponent = function(props) {
 ### controller.js
 saveTasks stores tasks inside local storage:
 ```
-    saveTasks() {
-        localStorage.setItem('tasks', JSON.stringify(this.tasks));
-    }
+saveTasks() {
+    localStorage.setItem('tasks', JSON.stringify(this.tasks));
+}
 ```
 
 addTasks allows users to add tasks:
 ```
 addTasks(event) {
-        event.preventDefault();
-        this.task = document.getElementById('task');
-        if (this.task.value == '' || this.task.value == null) {
-            this.removeTasks();
-        } else {
-            this.tasks.push(this.task.value);
-            this.saveTasks(); 
-            this.displayTasks();
-            this.clearTasks();
-        }
+    event.preventDefault();
+    this.task = document.getElementById('task');
+    if (this.task.value == '' || this.task.value == null) {
+        this.removeTasks();
+    } else {
+        this.tasks.push(this.task.value);
+        this.saveTasks(); 
+        this.displayTasks();
+        this.clearTasks();
     }
+}
 ```
 
 removeTasks allows users to remove tasks:
 ```
 removeTasks(task) {
-        const index = this.tasks.indexOf(task);
-        if (index > -1) { 
-            this.tasks.splice(index, 1);
-        }
-        this.saveTasks();
-        this.displayTasks();
+    const index = this.tasks.indexOf(task);
+    if (index > -1) { 
+        this.tasks.splice(index, 1);
     }
+    this.saveTasks();
+    this.displayTasks();
+}
 ```
+## Images
+![A screenshot of the To-Do List.](src/screenshots/Intro.png)
+
+![A Screenshot of a list that's entered by the user.](src/screenshots/List.png)
