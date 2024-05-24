@@ -13,7 +13,7 @@ body {
     padding:5%;
     margin-left: 25%;
     margin-right: 25%;
-    font-size: small;
+    font-size: large;
 }
 
 .todolist {
@@ -52,4 +52,23 @@ body {
 
 input {
     text-align: center;
+}
+
+.save {
+    font-size: x-large;
+    border: solid;
+    border-radius: 10px;
+    margin-left: 1%;
+}
+
+.save:hover {
+    background-color:black;
+    color: white;
+    border-color: black;
+}
+
+.task {
+    font-size: x-large;
+    border: solid;
+    border-radius: 10px;
 }

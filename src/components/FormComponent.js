@@ -6,10 +6,8 @@ const FormComponent = function(props) {
     return (
         <div className="formcontainer" id="formcontainer">
             <form className="form">
-                <input id="task" type="text" placeholder="Enter tasks here" />
-                <br />
-                <button id="" onClick={(event) => window.controller.addTasks(event)} type="submit">Save</button>
-                <button type="button">Cancel</button>
+                <input class="task" id="task" type="text" placeholder="Enter tasks here" />
+                <button class="save" onClick={(event) => window.controller.addTasks(event)} type="submit">Save</button>
             </form>
         </div>
     );
