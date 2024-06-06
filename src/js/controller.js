@@ -55,6 +55,10 @@ class Controller {
             // Appent item in listContainer
             this.listContainer.appendChild(item);
 
+            item.addEventListener('click', () => {
+                item.classList.toggle('completed');
+            })
+
             // Assign removeButton to an html button
             var removeButton = document.createElement("button");
             // removeButton context is a x value
