@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(-45deg, blue, lightblue);
+    background: linear-gradient(-45deg, rgb(222, 172, 8), white);
     background-size: cover;
     height: 100vh;
     margin-top: 5%;
@@ -14,6 +14,7 @@ body {
     margin-left: 25%;
     margin-right: 25%;
     font-size: large;
+    box-shadow: 5px 5px 10px;
 }
 
 .todolist {
@@ -33,6 +34,8 @@ body {
     padding: 5%;
     content: 1%;
     font-size: x-large;
+    list-style-type: circle;
+    box-shadow: 5px 5px 10px;
 }
 
 .listcontainer button {
@@ -43,6 +46,7 @@ body {
     background: linear-gradient(-45deg, red, lightcoral);
     border-color: black;
     border-radius: 25px;
+    box-shadow: 3px 3px 10px;
 }
 
 .container {
@@ -52,23 +56,29 @@ body {
 
 input {
     text-align: center;
+    font-size: x-large;
+    box-shadow: 5px 5px 10px;
 }
 
 .save {
+    background-color:rgb(11, 151, 231);
     font-size: x-large;
     border: solid;
-    border-radius: 10px;
+    color:white;
+    border-radius: 20px;
     margin-left: 1%;
-}
-
-.save:hover {
-    background-color:black;
-    color: white;
-    border-color: black;
+    padding: 10px;
+    border-color:black;
+    box-shadow: 5px 5px 10px black;
 }
 
 .task {
     font-size: x-large;
     border: solid;
     border-radius: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    list-style-type: disc;
 }
